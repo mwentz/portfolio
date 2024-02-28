@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Michael Wentz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="page-body">
+      <header class="container">
+        <h1>Michael Wentz</h1>
+        <p>Web developer in Burlington, Vermont</p>
+        <p>
+          I craft bespoke websites and tools for a cutting-edge nonprofit. From Content Management Systems to javascript frameworks, 
+          I choose the right tools for the job to build impactful interfaces for content managers and users alike. 
+          I serve as a key thinking partner all the way through projects from concept to launch, continued through the rest 
+          of the life of the website. A native Vermonter, I love skiing, hiking, strawberry rhubarb pie, and cheese.
+        </p>
+      </header>
+      <div class="container">
+        <h2>Works</h2>
+        <div class="grid">
+          <div class="grid-item"><a href="https://www.veic.org">
+            <img src="/veic-screenshot.jpg" alt="screenshot of the VEIC website">
+            <div class="grid-item-content">
+              <h3>veic.org</h3>
+              <p>Frontend and backend deveopment, information architecture, content development.</p>
+              <span class="btn">Visit site</span>
+            </div>
+          </a></div>
+          <div class="grid-item"><a href="https://www.efficiencyvermont.com">
+            <img src="/efficiency-vermont-screenshot.jpg" alt="screenshot of the Efficiency Vermont website">
+            <div class="grid-item-content">
+              <h3>efficiencyvermont.com</h3>
+              <p>Frontend and backend deveopment, information architecture, content development, tool development.</p>
+              <span class="btn">Visit site</span>
+            </div>
+          </a></div>
+          <div class="grid-item"><a href="https://www.efficiencysmart.org">
+            <img src="/efficiency-smart-screenshot.jpg" alt="screenshot of the Efficiency Smart website">
+            <div class="grid-item-content">
+              <h3>efficiencysmart.org</h3>
+              <p>Frontend and backend deveopment, wireframing, information architecture, content development, tool development.</p>
+              <span class="btn">Visit site</span>
+            </div>
+          </a></div>
+          <div class="grid-item"><a href="https://www.driveelectricvt.com">
+            <img src="/drive-electric-vermont-screenshot.jpg" alt="screenshot of the Drive Electric Vermont website">
+            <div class="grid-item-content">
+              <h3>driveelectricvt.com</h3>
+              <p>Frontend and backend deveopment, information architecture, content development, tool development.</p>
+              <span class="btn">Visit site</span>
+            </div>
+          </a></div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
+
+<!--
+Primary Color: #2C3E50 (Dark Blue)
+Accent Color 1: #3498DB (Light Blue)
+Accent Color 2: #E74C3C (Red)
+Neutral Color 1: #ECF0F1 (Light Gray)
+Neutral Color 2: #95A5A6 (Dark Gray)
+-->
+
+<style>
+  body {
+    font-family:"Noto Sans", sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+  .page-body {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 60px 60px;
+    background-color: #fff;
+  }
+  header {
+    margin-bottom: 60px;
+  }
+  h1, h2, h3, h4 {
+    color: #2C3E50;
+  }
+  h1 {
+    font-size: 48px;
+    line-height: 1;
+  }
+  h1, h2 {
+    font-family: "Noto Serif", serif;
+  }
+  .container {
+
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    grid-auto-rows: minmax(200px, auto);
+  }
+  .grid-item {
+    /* background-color: #e7f5fe; */
+  }
+  .grid-item img {
+    width: 100%;
+    display: block;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+  .grid-item-content {
+    padding: 20px;
+  }
+  .grid-item-content h3 {
+    margin-top: 0;
+  }
+  .grid-item a {
+    text-decoration: none;
+  }
+  .grid-item a:hover img,
+  .grid-item a:focus img,
+  .grid-item a:active img {
+    opacity: .7;
+    filter: alpha(opacity=70);
+  }
+  .grid-item a p {
+    color: black;
+  }
+  .grid-item a:hover h3,
+  .grid-item a:focus h3,
+  .grid-item a:active h3 {
+    color: #E74C3C;
+  }
+  .btn {
+    padding: 12px;
+    background-color: #2C3E50;
+    color: #fff;
+    display: inline-block;
+    border-radius: 3px;
+    margin-top: 10px;
+  }
+  .grid-item a:hover .btn,
+  .grid-item a:focus .btn,
+  .grid-item a:active .btn {
+    background-color:#E74C3C;
+  }
+</style>
