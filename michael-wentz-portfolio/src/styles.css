@@ -1,0 +1,186 @@
+/* 
+Primary Color: #2C3E50 (Dark Blue) 
+Accent Color 1: #3498DB (Light Blue)
+Accent Color 2: #E74C3C (Red)
+Neutral Color 1: #ECF0F1 (Light Gray)
+Neutral Color 2: #95A5A6 (Dark Gray)
+*/
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+header, section {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    padding: 1rem 2rem 0;
+    margin-bottom: 6rem;
+}
+
+section {
+    padding: 0 2rem 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+.title,
+a {
+    color: #2C3E50;
+}
+
+a:hover, a:focus, a:active {
+    color: black;
+}
+
+.title {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.title .title-thin {
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+
+@media (width <= 55rem) {
+    .title-thin {
+        display: block;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid-item {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    max-width: 100%;
+}
+
+.about-me-item {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2C3E50;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.grid-item:hover img,
+.grid-item:focus img,
+.grid-item:active img {
+    opacity: .6;
+    filter: alpha(opacity=60);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.grid-item-title {
+    opacity: 0;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: white;
+    background-color: #000000bb;
+    padding: .5rem;
+    border-radius: 2px;
+}
+
+a:hover .grid-item-title, a:focus .grid-item-title, a:active .grid-item-title {
+    opacity: 1;
+    transition: opacity .4s ease-in-out;
+}
+
+.btn {
+    padding: 0.75rem;
+    background-color: #2C3E50;
+    color: #fff;
+    display: inline-block;
+    border-radius: 3px;
+    margin-top: .5rem;
+}
+
+a:hover .btn,
+a:focus .btn,
+a:active .btn {
+    background-color: #E74C3C;
+}
+
+/* About me */
+
+.bio {
+    display:flex;
+    align-items: center;
+}
+
+.bio-img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.bio-text {
+    margin-left: 8rem;
+    margin-right: 8rem;
+    
+}
+
+/* Home Link */
+.home-link {
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.home-link a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    color: #000;
+}
+
+.home-link a:hover, .home-link a:focus, .home-link a:active,
+.home-link a:hover svg, .home-link a:focus svg, .home-link a:active svg {
+    fill: red;
+}
+
+.home-link svg {
+    vertical-align: middle;
+    padding-bottom: 4px;
+}
