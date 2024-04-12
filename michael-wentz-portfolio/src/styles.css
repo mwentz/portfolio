@@ -49,7 +49,7 @@ a:hover, a:focus, a:active {
     margin-bottom: 4rem;
 }
 
-.title .title-thin {
+.title-thin {
     font-weight: 300;
 }
 
@@ -163,7 +163,6 @@ a:active .btn {
 
 /* Home Link */
 .home-link {
-    display: block;
     margin-top: 2rem;
     text-align: center;
 }
