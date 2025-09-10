@@ -9,6 +9,7 @@
     --black-color: #000;
     --dark-color-transparency: #000000bb;
     --light-color-transparency: #00000045;
+
     /* set theme colors */
     --primary-color: var(--dark-blue-color);
     --primary-transparent-color: var(--dark-color-transparency);
@@ -64,7 +65,7 @@ a:hover, a:focus, a:active {
     color: var(--offset-color);
     background: var(--primary-color);
     box-shadow: 0px 0px 0px 6px var(--primary-color);
-    border-radius: 2px;
+    /* border-radius: 2px; */
 }
 
 @media (hover: hover) {
