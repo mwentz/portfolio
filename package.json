@@ -1,0 +1,15 @@
+{
+  "name": "michael-wentz-portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "serve-dev": "serve michael-wentz-portfolio/",
+    "build-prod": "echo",
+    "serve-prod": "serve site/"
+  },
+  "devDependencies": {
+    "minify": "^14.1.0",
+    "serve": "^14.2.5"
+  }
+}
