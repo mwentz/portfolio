@@ -21,6 +21,11 @@ The site serves as a concise digital profile, emphasizing clarity, speed, and ac
 - CSS3
 - Hosting: GitHub Pages
 
+## Tooling
+
+- minify CSS with 'npm run minify-css'
+- size size images with 'npm run optimize-images'
+
 ## Deployment
 
 This site is designed to be deployed as static files. No build tools or bundlers are required.
