@@ -38,9 +38,9 @@ To deploy via GitHub Pages:
 2. Enable Pages in repository settings
 3. Set source to `/root` or `/docs` as needed
 
-## License
+## Copyrights
 
-This project is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) License. The license can be found at https://creativecommons.org/licenses/by/4.0/
+Screenshots of websites are used for reference and demonstration only. All trademarks, and copyrighted materials are the intellectual property of the respective website's owners. 
 
 ---
 
