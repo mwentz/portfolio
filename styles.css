@@ -30,14 +30,28 @@
     }
 }
 
+/* set html and body to 100% to keep the footer at the bottom */
+html,
 body {
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    background-color: var(--offset-color);
+}
+
+body {
+    /* Set body to use grid layout and expand the main content area to set footer at the bottom */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
     font-family: "Montserrat", sans-serif;
     margin: 0;
-    background-color: var(--offset-color);
     color: var(--text-color);
 }
 
-header, main, .footer-body {
+.container {
     max-width: 75rem;
     margin-left: auto;
     margin-right: auto;
@@ -46,7 +60,7 @@ header, main, .footer-body {
 }
 
 @media (width <= 55rem) {
-    header, main, .footer-body {
+    .container {
         padding-right: 2rem;
         padding-left: 2rem;
     }
@@ -64,9 +78,6 @@ main {
 footer {
     background-color: var(--primary-color);
     color: var(--offset-color);
-}
-
-.footer-body {
     padding-bottom: 2rem;
     padding-top: 2rem;
 }
@@ -80,7 +91,7 @@ a {
     color: var(--primary-color);
 }
 
-.footer-body a {
+footer a {
     color: var(--offset-color);
 }
 
@@ -91,7 +102,7 @@ a:hover, a:focus, a:active {
     /* border-radius: 2px; */
 }
 
-.footer-body a:hover, .footer-body a:focus, .footer-body a:active {
+footer a:hover, footer a:focus, footer a:active {
     color: var(--primary-color);
     background: var(--offset-color);
     box-shadow: 0px 0px 0px 6px var(--offset-color);
@@ -108,7 +119,7 @@ a:hover, a:focus, a:active {
     line-height: 1;
     font-weight: 700;
     margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 0;
 }
 
 .title-thin {
