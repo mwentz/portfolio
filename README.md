@@ -2,6 +2,8 @@
 
 This repository contains the source code for my personal portfolio — a minimalist, performance-focused site designed to showcase my background, selected projects, and technical capabilities.
 
+Site URL: https://mwentz.github.io/portfolio/
+
 ## Purpose
 
 The site serves as a concise digital profile, emphasizing clarity, speed, and accessibility. It avoids unnecessary dependencies and frameworks, relying instead on clean, semantic markup and lightweight styling.
