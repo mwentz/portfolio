@@ -37,7 +37,7 @@ body {
     color: var(--text-color);
 }
 
-header, main {
+header, main, .footer-body {
     max-width: 75rem;
     margin-left: auto;
     margin-right: auto;
@@ -46,7 +46,7 @@ header, main {
 }
 
 @media (width <= 55rem) {
-    header, main {
+    header, main, .footer-body {
         padding-right: 2rem;
         padding-left: 2rem;
     }
@@ -61,6 +61,16 @@ main {
     padding-bottom: 6rem;
 }
 
+footer {
+    background-color: var(--primary-color);
+    color: var(--offset-color);
+}
+
+.footer-body {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
 h1,
 h2,
 h3,
@@ -70,11 +80,21 @@ a {
     color: var(--primary-color);
 }
 
+.footer-body a {
+    color: var(--offset-color);
+}
+
 a:hover, a:focus, a:active {
     color: var(--offset-color);
     background: var(--primary-color);
     box-shadow: 0px 0px 0px 6px var(--primary-color);
     /* border-radius: 2px; */
+}
+
+.footer-body a:hover, .footer-body a:focus, .footer-body a:active {
+    color: var(--primary-color);
+    background: var(--offset-color);
+    box-shadow: 0px 0px 0px 6px var(--offset-color);
 }
 
 @media (hover: hover) {
@@ -239,4 +259,17 @@ a:active .btn {
 .home-link svg {
     vertical-align: middle;
     padding-bottom: 4px;
+}
+
+/* Footer */
+/* GitHub Logo */
+.github-mark {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    margin-right: 0.25rem;
+}
+
+.github-mark path {
+    fill: var(--offset-color);
 }

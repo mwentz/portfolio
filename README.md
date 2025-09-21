@@ -28,16 +28,6 @@ The site serves as a concise digital profile, emphasizing clarity, speed, and ac
 - minify CSS with 'npm run minify-css'
 - size size images with 'npm run optimize-images'
 
-## Deployment
-
-This site is designed to be deployed as static files. No build tools or bundlers are required.
-
-To deploy via GitHub Pages:
-
-1. Push to `main` branch
-2. Enable Pages in repository settings
-3. Set source to `/root` or `/docs` as needed
-
 ## Copyrights
 
 Screenshots of websites are used for reference and demonstration only. All trademarks, and copyrighted materials are the intellectual property of the respective website's owners. 
