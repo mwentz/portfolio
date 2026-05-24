@@ -6,13 +6,10 @@
   "scripts": {
     "build": "npm run minify-css && npm run optimize-images",
     "dev": "npm run minify-css",
-    "minify-css": "minify styles.css > styles.min.css",
-    "optimize-images": "sharp -q 100 -c 9 -i ./images/*.jpg -o ./images/300 resize 300 --withoutEnlargement true -f webp && sharp -q 100 -c 9 -i ./images/*.jpg -o ./images/600 resize 600 --withoutEnlargement true -f webp && sharp -q 100 -c 9 -i ./images/*.jpg -o ./images/900 resize 900 --withoutEnlargement true -f webp"
+    "minify-css": "node minify-css.js",
+    "optimize-images": "mkdir -p ./images/300 ./images/600 ./images/900 && magick mogrify -path ./images/300 -resize \"300x>\" -quality 100 -define webp:method=6 -format webp ./images/*.jpg && magick mogrify -path ./images/600 -resize \"600x>\" -quality 100 -define webp:method=6 -format webp ./images/*.jpg && magick mogrify -path ./images/900 -resize \"900x>\" -quality 100 -define webp:method=6 -format webp ./images/*.jpg"
   },
   "devDependencies": {
-    "minify": "^14.1.0"
-  },
-  "dependencies": {
-    "sharp-cli": "^5.2.0"
+    "lightningcss": "1.32.0"
   }
 }
