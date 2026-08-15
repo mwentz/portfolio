@@ -151,6 +151,9 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 @media (width <= 55rem) {
